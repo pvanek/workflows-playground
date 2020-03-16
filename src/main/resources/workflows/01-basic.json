@@ -1,0 +1,26 @@
+{
+  "name": "basic-test",
+  "version": "1.0",
+  "description": "simple linear workflow",
+  "nodes": [
+    {
+      "name": "step1",
+      "description": "first step",
+      "className": "SimpleNode"
+    },
+    {
+      "name": "step2",
+      "description": "second step",
+      "className": "SimpleNode"
+    },
+    {
+      "name": "step3",
+      "description": "third step",
+      "className": "SimpleNode"
+    }
+  ],
+  "edges": [
+    {"from_node":  "step1", "to_node":  "step2"},
+    {"from_node":  "step2", "to_node":  "step3"}
+  ]
+}
